@@ -15,10 +15,10 @@ The repository is organized into three parts :
 * data.zip : this file contains the data that we used in our analysis
 
 ## Microscopy ##
-* Analysis script.ipynb : performs SMdM and analysis the measurements
-* Concatenate and find peaks.ipynb : concatenates measurements into one tiff file that can be used by the analysis script
 * Laser modulation.ipynb : modulates the lasers in our measurement setup
+* Concatenate and find peaks.ipynb : concatenates measurements into one tiff file that can be used by the analysis script
 * Parameters.xml : this file contains all the settings used for peak finding using the Storm Analysis package (https://github.com/ZhuangLab/storm-analysis)
+* Analysis script.ipynb : performs SMdM and analysis the measurements
 
 ## Simulations ##
 * run_sim_map_fit.py: starts the program for running the simulation, using the module interactive_simulation included in the package "scripts"
