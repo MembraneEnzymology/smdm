@@ -2,6 +2,9 @@
 
 This is a repository of code developed in the Membrane Enzymology group of University of Groningen for the analysis of protein diffusion in Escherichia coli cytoplasm using Single-Molecule Displacement Mapping (SMdM).
 
+If you are using code from this package please refer to it using the following doi :
+[![DOI](https://zenodo.org/badge/446476943.svg)](https://zenodo.org/badge/latestdoi/446476943)
+
 The repository is organized into three parts :
 1. The bioinformatic analysis part is used to find protein candidates for diffusion measurements
 2. The microscopy part contains all the notebooks for microscopy data acquisition and analysis
