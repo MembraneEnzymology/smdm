@@ -22,9 +22,9 @@ The repository is organized into three parts :
 * Parameters.xml : this file contains all the settings used for peak finding using the Storm Analysis package (https://github.com/ZhuangLab/storm-analysis)
 
 ## Simulations ##
-* run_sim_map_fit.py: starts the program for running the simulation, calling the module interactive_simulation included in the package "scripts"
+* run_sim_map_fit.py: starts the program for running the simulation, using the module interactive_simulation included in the package "scripts"
 * scripts
-  * interactive_simulation.py: receives input from user to define a set of radi, lengths and diffusion coefficients to run different simulations
+	* interactive_simulation.py: receives input from user to define a set of radi, lengths and diffusion coefficients to run different simulations
 	* smoldyn_simulation.py: starts the diffusion simulation using the package "smoldyn"
 	* create_map.py: creates a map of displacements using the desired pixel size
 	* create_map_three_zones.py: divides the cell in three zone (cell center and cell poles) and create a map of displacements
