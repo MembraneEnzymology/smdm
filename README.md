@@ -23,17 +23,15 @@ The repository is organized into three parts :
 ## Simulations ##
 * run_sim_map_fit.py: starts the program for running the simulation, using the module interactive_simulation included in the package "scripts"
 * scripts
-	* interactive_simulation.py: receives input from user to define a set of radi, lengths and diffusion coefficients to run different simulations
+	* interactive_simulation.py: receives input from user to define a set of radi, lengths and diffusion coefficients to run different simulations. Inside this file the users can specify the path in which they want to save the output files
 	* smoldyn_simulation.py: starts the diffusion simulation using the package "smoldyn"
 	* create_map.py: creates a map of displacements using the desired pixel size
 	* create_map_three_zones.py: divides the cell in three zone (cell center and cell poles) and create a map of displacements
 	* diffusion_fit_first.py: performe a fit of the displacements to obtain the diffusion coefficient
-* files
-	* the output from the simulations will be stored in this folder
 
 ## Notebook for figures and data analysis ##
-Once the simulations have been performed, the output data needs to be moved in this folder to perform data analysis and to create the figures.
-* figures_and_analysis.ipynb: creates figures and analyze data by loading the files obtained from simulations and by loading the spreadsheets containing the information about diffusion coefficients and cell sizes located in the folder. The data reported in these spreadsheets were obtained through microscopy measurements and are the ones used in our paper.
+Once the simulations have been performed, the folders containing the output data need to be moved in this folder to perform data analysis and to create the figures.
+* figures_and_analysis.ipynb: creates figures and analyze data by loading the files obtained from simulations (paths need to be change accordingly inside the notebook) and by loading the spreadsheets containing the information about diffusion coefficients and cell sizes located in the folder. The data reported in these spreadsheets were obtained through microscopy measurements and are the ones used in our paper.
 
 ## Used Python packages ##
 * [numpy] (http://www.numpy.org/)
