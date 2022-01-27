@@ -10,7 +10,7 @@ The repository is organized into three parts :
 
 ## Bioinformatic analysis ##
 * 01 - Creating SQL from IntAct.ipynb : This notebook is used to import data from the IntAct database into our own Postgres database
-* 02 - Importing abundance data.ipynb : This notebook imports data from the Schmidt et al. 2015 database into postgreSQL database and merges it with the IntAct database
+* 02 - Importing abundance data.ipynb : This notebook imports data from the Schmidt et al. 2016 database into postgreSQL database and merges it with the IntAct database
 * 03 - Queries and picking POIs.ipynb : Counting interactions, checking GeneOntology, detailed statistics per unique interaction, exports, processing with pandas, plotting, comments, markdown, conversion to notebook
 * data.zip : this file contains the data that we used in our analysis
 
