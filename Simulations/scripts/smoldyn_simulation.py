@@ -22,7 +22,7 @@ def critical_points_cell(center, radius, length):
     top = radius + cy
     bot = - radius + cy
     pos = radius + cz
-    neg = radius - cz
+    neg = - radius + cz
     
     return cx, cy, cz, lx, clx, crx, rx, top, bot, pos, neg
 
