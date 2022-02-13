@@ -5,6 +5,7 @@
 import numpy as np
 import pandas as pd
 import smoldyn
+import smoldyn._smoldyn as S
 
 # save the time and feed it as random seed to smoldyn to output the graphics and then run the code for data --> done
 # find a way to restart program after it stops due to openGL
@@ -43,7 +44,10 @@ def smoldyn_billiard(center, radius, length, N, D, total_time, time_step, seed, 
     horizontal_size = [crx - clx]
 
     # create simulation environment defining the bottom left corner and the top right
-    s = smoldyn.Simulation(low = [left_axis, bot_axis, neg_axis], high = [right_axis, top_axis, pos_axis], seed = seed)
+    s = smoldyn.Simulation(low = [left_axis, bot_axis, neg_axis], high = [right_axis, top_axis, pos_axis])
+    
+    # set the random seed
+    S.Simulation.setRandomSeed(s, int(seed1))
 
     # add a molecular specie with a diffusion coefficient D
     A = s.addSpecies("A", difc = D, color = "green")
